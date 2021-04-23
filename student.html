@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title></head>
+
+        <style>
+            
+            *{margin: 0; padding: 0;}
+            body{background-image:url("https://mec.edu.in/wp-content/uploads/2020/08/banner-2.png"); font-family: sans-serif;}
+            .form-wrap{width: 320px; background: rgba(0, 0, 0, 0.5); padding: 40px 20px; box-sizing: border-box; position: fixed;left: 50%;top: 50%;transform: translate(-50% ,
+       -50% );}
+       h1{text-align: center; color:#fff; font-weight: normal;margin-bottom: 20px;}
+     
+      
+       input{width:100%;background: none; border: 1px solid #fff; border-radius: 3px; padding: 6px 16px;box-sizing: border-box;margin-bottom: 20px;font-size: 16px;color:rgb(39, 142, 202)}
+       input[type="button"]{ background:#1d30d6;border:0; cursor:pointer;color:#fff;}
+       input[type="button"]:hover{background: #5e6631; transition: .6s;}
+       select{width:100%;background: none; border: 1px solid #fff; border-radius: 3px; padding: 6px 16px;box-sizing: border-box;margin-bottom: 20px;font-size: 16px;color:rgb(39, 142, 202)}
+       select[type="button"]{ background: #bac675;border:0; cursor:pointer;color:rgba(0,0,0,0.753);}
+    select[type="button"]:hover{background: #12d854; transition: .6s;}
+       p{color:#fff}
+        </style>
+
+        <body>
+            <div class = "form-wrap">
+                <form action="Register.php" method="POST">
+                    <h1>Students Detail Form</h1>
+                <p>  Email Id :  <input type="text" name="Email id">
+                   Name :  <input type="text" name="Name">
+                   Roll Number : <input type="text" name="Roll Number">
+                   Year : <select type ="option" name="Year">
+                    <option disabled ="disabled" selected="selected"></option> 
+                    <option value="first year"> first year</option>
+                    <option value="second year"> second year</option>
+                    <option value="third year"> third year</option>
+                    <option value="final year"> final year</option>
+
+                   </select>
+                   
+                   College Name :    <select class ="option" name="College" >
+                    <option disabled ="disabled" selected="selected"></option>
+                    <option value= "Muthayammal engineering college" >  Muthayammal engineering college  </option>
+                    <option value= "Muthayammal college of college" >  Muthayammal college of engineering   </option>
+                </select>
+                  
+                   Department : <select class ="option" name="Department" >
+                    <option disabled ="disabled" selected="selected"></option>
+                    <option value="Agriculture Engineering"> Agriculture Engineering</option>
+                    <option value=" Artificial Intelligence and Datascience" >   Artificial Intelligence and Datascience  </option>
+                    <option value= "Bio Medical Engineering" >  Bio Medical Engineering   </option>
+                    <option value= "Bio Technology" >  Bio Technology   </option>
+                    <option value="Chemical Engineering" >  Chemical Engineering   </option>
+                    <option value= "Civi Engineering" >  Civil Engineering  </option>
+                    <option value= "Computer science and Engineering" >  Computer science and Engineering </option>
+                    <option value="Cyber Security" >  Cyber Security   </option>
+                    <option value= "Electronics and Communication Engineering" >  Electronics and Communication Engineering  </option>
+                    <option value= "Electrical and Electronics Engineering" >  Electrical and Electronics Engineering   </option>
+                    <option value= "Information Technology" >  Information Technology </option>
+                    <option value= "MBA" >  MBA   </option>
+                    <option value= "MCA" >  MCA </option>
+                    <option value= " Medical Electronics" >  Medical Electronics   </option>
+                    <option value= "Mechanical Engineering" >  Mechanical Engineering   </option>
+                    <option value= "Robotics and Automation" >   Robotics and Automation  </option>
+                    <option value= "science and humanities" > science and humanities  </option>
+                </select> 
+                   Phone Number:  <input type="int"  name="Phone Number">
+                    <input type="button" value="Submit" name="Submit" >
+                    
+                </p>
+                
+
+                </form>
+            </div>
+        </body>
+</html>
